@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*字体图标*/
+@font-face {
+    font-family: 'wjs';
+    src: url('../fonts/MiFie-Web-Font.eot'); /* IE9*/
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MiFie-Web-Font.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/MiFie-Web-Font.svg') format('svg'); /* iOS 4.1- */
+}
+/*自定义字体图标*/
+.wjs_font_icon{
+    font-family: wjs;
+}
+/*手机图标对应的编码*/
+.wjs_font_icon-phone::before{
+    content: "\e908";
+}
+/*电话图标对应的编码*/
+.wjs_font_icon_tel::before{
+    content: "\e909";
+    font-size: 14px;
+}
+
+/*wjs logo*/
+.wjs_font_icon_logo::before{
+    content: "\e920";
+}
+/*wjs 文本*/
+.wjs_font_icon_text::before{
+    content: "\e93e";
+}
+
+.wjs_font_icon_E900::before{
+    content: "\e900";
+}
+
+.wjs_font_icon_E901::before{
+    content: "\e901";
+}
+.wjs_font_icon_E902::before{
+    content: "\e902";
+}
+.wjs_font_icon_E906::before{
+    content: "\e906";
+}
+.wjs_font_icon_E904::before{
+    content: "\e904";
+}
+.wjs_font_icon_E905::before{
+    content: "\e905";
+}
+
+.wjs_font_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_font_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_font_icon_new03::before{
+    content: "\e910";
+}
+.wjs_font_icon_new04::before{
+    content: "\e911";
+}
+
+.wjs_font_icon_partner01::before{
+    content:"\e946";
+}
+.wjs_font_icon_partner02::before{
+    content: "\e92f";
+}
+.wjs_font_icon_partner03::before{
+    content: "\e92e";
+}
+.wjs_font_icon_partner04::before{
+    content: "\e92a";
+}
+.wjs_font_icon_partner05::before{
+    content: "\e929";
+}
+.wjs_font_icon_partner06::before{
+    content: "\e931";
+}
+.wjs_font_icon_partner07::before{
+    content: "\e92c";
+}
+.wjs_font_icon_partner08::before{
+    content: "\e92b";
+}
+.wjs_font_icon_partner09::before{
+    content: "\e92d";
+}
+
+
+body{
+    min-width: 320px;
+}
+/*顶部*/
+header .row{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+header .row>div.wjs-mobile{
+    position: relative;
+}
+header .row>div.wjs-mobile>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .row>div.wjs-mobile >.img{
+    display: none;
+    position: absolute;
+    top:40px;
+    z-index: 3;
+    left: 50%;
+    margin-left: -60px;
+}
+header .row>div.wjs-mobile img{
+    border: 1px solid #dddddd;
+    border-top: none;
+    /*margin-top: -1px;*/
+
+}
+header .row>div.wjs-mobile:hover .img{
+    display: block;
+}
+
+header .row>div:last-of-type >button{
+    height: 30px;
+    padding: 4px 12px;
+    background-color: #fff;
+
+}
+header .row>div:last-of-type>.register{
+    background-color: #e92322;
+    color: #ffffff;
+    width: 100px;
+}
+
+
+/*轮播图*/
+.carousel-inner > .item > a.pc-image{
+    width: 100%;
+    height: 410px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-inner > .item > a.mobile-image,
+.carousel-inner > .item > a.mobile-image > img {
+    line-height: 1;
+    width: 100%;
+    display: block;
+}
+
+/*信息部分*/
+.info{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.info>.container>.row{
+    padding: 20px;
+}
+.info>.container>.row>.info-body{
+    padding: 20px 0;
+}
+.info>.container>.row>.info-body>a>div{
+    float: left;
+}
+.info>.container>.row>.info-body:hover a{
+    color: #e92322;
+}
+.info>.container>.row .info-icon{
+    margin-left: 50px;
+}
+.info>.container>.row .info-icon>span{
+    font-size: 40px;
+    padding:20px;
+}
+
+/*预约部分*/
+.predate{
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.predate .wjs_font_icon{
+    font-size: 20px;
+}
+.predate .predate-left{
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.predate >.container>.row>.predate-left>s{
+    text-decoration: none;
+    color: #e92322;
+}
+
+.predate .row>.predate-left>.fast-predate{
+    color: #e92322;
+    border-bottom: 1px dotted #e92322;
+}
+
+/*底部*/
+footer{
+    background-color: #cccccc;
+}
+footer >.container{
+    text-align: center;
+}
+
+
+footer >.container>h4{
+    font-size: 25px;
+    margin-top: 40px;
+}
+footer >.container>.coperation>ul>li{
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+footer >.container>.coperation>ul>li:hover>a{
+    color: #e92322;
+}
+
+footer .wjs_font_icon{
+    font-size: 60px;
+}
+
+footer .fs_120{
+    font-size: 100px;
+}

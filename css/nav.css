@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*字体图标*/
+@font-face {
+    font-family: 'wjs';
+    src: url('../fonts/MiFie-Web-Font.eot'); /* IE9*/
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MiFie-Web-Font.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/MiFie-Web-Font.svg') format('svg'); /* iOS 4.1- */
+}
+/*自定义字体图标*/
+.wjs_font_icon{
+    font-family: wjs;
+}
+/*手机图标对应的编码*/
+.wjs_font_icon-phone::before{
+    content: "\e908";
+}
+/*电话图标对应的编码*/
+.wjs_font_icon_tel::before{
+    content: "\e909";
+    font-size: 14px;
+}
+
+/*wjs logo*/
+.wjs_font_icon_logo::before{
+    content: "\e920";
+}
+/*wjs 文本*/
+.wjs_font_icon_text::before{
+    content: "\e93e";
+    color: #000000;
+}
+.wjs-nav {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    /*box-sizing: border-box;*/
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+.wjs-nav .navbar-brand {
+    color: #e92322;
+    height: 100px;
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 68px;
+    font-size: 40px;
+
+}
+.wjs-nav .navbar-brand:hover,
+.wjs-nav .navbar-brand:focus {
+    color: #e92322;
+    background-color: transparent;
+}
+.wjs-nav .navbar-text {
+    color: #777;
+}
+.wjs-nav .navbar-nav > li > a {
+    color: #777;
+}
+.wjs-nav .navbar-nav > li > a{
+    box-sizing: border-box;
+    font-size:14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 68px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wjs-nav .navbar-nav > li > a:hover,
+.wjs-nav .navbar-nav > li > a:focus {
+    color: #777;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.wjs-nav .navbar-nav > .active > a,
+.wjs-nav .navbar-nav > .active > a:hover,
+.wjs-nav .navbar-nav > .active > a:focus {
+    color: #777;
+    border-bottom: 2px solid #e92322;
+    background-color: #f8f8f8;
+}
+.wjs-nav .navbar-nav > .disabled > a,
+.wjs-nav .navbar-nav > .disabled > a:hover,
+.wjs-nav .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.wjs-nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 33px;
+}
+.wjs-nav .navbar-toggle:hover,
+.wjs-nav .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.wjs-nav .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.wjs-nav .navbar-collapse,
+.wjs-nav .navbar-form {
+    border-color: #e7e7e7;
+}
+.wjs-nav .navbar-nav > .open > a,
+.wjs-nav .navbar-nav > .open > a:hover,
+.wjs-nav .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.wjs-nav .navbar-link {
+    color: #777;
+}
+.wjs-nav .navbar-link:hover {
+    color: #333;
+}
+.wjs-nav .btn-link {
+    color: #777;
+}
+.wjs-nav .btn-link:hover,
+.wjs-nav .btn-link:focus {
+    color: #333;
+}
+.wjs-nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs-nav .btn-link:hover,
+.wjs-nav .btn-link[disabled]:focus,
+fieldset[disabled] .wjs-nav .btn-link:focus {
+    color: #ccc;
+}
